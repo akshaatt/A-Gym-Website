@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #000;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+ background: #000;
+    border: 0px solid #000;
+ box-shadow: inset 0 0 2.5 2px rgba(0,0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb{
+background:#fff;
+/* padding: 15px; */
+border-radius: 0%;
+/* margin-top: 20px; */
+
+}
+
+nav{
+    background-color:#000;
+    /* float: right;  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin-top: 100px;
+    transition: 0.5s;
+    /* opacity: 0.9; */
+}
+nav ul{
+    display: flex;
+    /* */
+    /* position: fixed; */
+    text-decoration: none;
+    transition: 0.52s;
+  
+    
+
+}
+nav ul li{
+list-style: none;
+text-decoration: none;
+padding: 45px;
+/* margin: 10px; */
+
+
+}
+nav ul li a{
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+text-decoration: none;
+font-size: 15px;
+font-family: 'Source Code Pro', monospace;
+font-weight: 700;
+text-align: center;
+/* position: absolute; */
+/* float: right; */
+text-transform: uppercase;
+
+
+}
+nav ul li a:hover{
+    color: white;
+}
+.image1{
+    height: 60px;
+    width: 80px;
+    position: relative;
+    margin-top: -20px;
+    cursor: not-allowed;
+}
+.menu-toggle{
+    color: white;
+    /* float: right; */
+    cursor: pointer;
+    display: none;
+    line-height: 50px;
+    font-size: 24px;
+    margin: 10px;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    position: sticky;
+}
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+    /* color: grey; */
+    font-size: 25px;
+    letter-spacing: 35px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.icon a{
+    color: grey;
+}
+.icon a:hover{
+    color: #fff;
+}
+.video{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-top: 100px;
+    width: 60%;
+}
+.video-main{
+    display: grid;
+    justify-items: center;
+}
+.farji{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 10px;
+    
+}
+.farji a{
+    color: grey;
+    letter-spacing: 50px;
+    padding: 20px;
+    font-size: 30px;
+    margin: 5px;
+    transition: 0.5s;
+}
+.farji a:hover{
+    color: #fff;
+}
+.supplement{
+    font-family: 'Abel', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-top: 55px;
+    margin-bottom: 20px;
+}
+.detail{
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    /* margin-left: 120px; */
+    border-bottom: 0.5px solid #383030;
+    /* width: 85%; */
+    /* margin-bottom: 50px; */
+}
+.content{
+    margin-bottom: 250px;
+}
+.span{
+    font-size: 2rem;
+    padding: 15px;
+    margin: 20px;
+    font-family: 'Source Code Pro', monospace;
+}
+.span2{
+    font-size: 2rem;
+    padding: 15px;
+    margin: 20px;
+    font-family: 'Source Code Pro', monospace;
+    text-transform: uppercase;
+}
+.span3{
+    font-size: 1rem;
+  
+    padding: 15px;
+    margin: 20px;
+    font-family: 'Source Code Pro', monospace;
+    background: #000;
+    color: #fff;
+    /* float: right; */
+}
+.btn{
+    height: 50px;
+    width: 90px;
+    background-color: #000;
+    color: whitesmoke;
+    font-size: 1rem;
+    padding: 10px;
+    cursor: pointer;
+    border: 2px inset #fff;
+    transition: 0.5s;
+    font-family: 'Abel', sans-serif;
+    letter-spacing: 4px;
+    
+}
+.btn1{
+    height: 50px;
+    width: 150px;
+    background-color: #000;
+    color: whitesmoke;
+    font-size: 1rem;
+    padding: 10px;
+    cursor: pointer;
+    border: 2px inset #fff;
+    transition: 0.5s;
+    font-family: 'Abel', sans-serif;
+    letter-spacing: 4px;
+   
+}
+.btn:hover{
+    color: black;
+    background: #fff;
+}
+.btn1:hover{
+    color: black;
+    background: #fff;
+}
+footer{
+    background: #000;
+    margin-top: 125px;
+    border-top: 2px solid #383030;
+
+}
+.footer-text{
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    font-family: 'Abel', sans-serif;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.footer-text span{
+font-weight: 1000;
+}
+.social2 p{
+    color: #fff;
+    padding: 10px;
+    margin: 8px;
+    font-family: 'Abel' , sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    /* margin-left: 15px; */
+    margin-top: 50px;
+    text-align: center;
+}
+.social2 a{
+    color: grey;
+    font-size: 20px;
+    padding: 20px;
+    
+    /* flex-direction: row; */
+    letter-spacing: 15px;
+    text-align: center;
+    /* margin-left: 15px; */
+    transition: 0.5s;
+    text-decoration: none;
+}
+.social2 a:hover{
+    color: #fff;
+}
+.ab{
+    text-align: center;
+}
+.copyright{
+    text-align: center;
+    font-size: 1.2rem;
+    color: grey;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Source Code Pro', monospace;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+
+}
+@media(max-width:798px){
+    nav ul{
+        display: none;
+    }
+    .ul.togglecls{
+        display: block;
+    }
+   
+    .menu-toggle{
+        display: block;
+    }
+    /* .social{
+        display: none;
+    } */
+}
+@media(max-width:714px){
+    .farji a{
+        letter-spacing: 0px;
+    }
+}
+@media(max-width:505px){
+    .icon{
+        letter-spacing: 20px;
+    }
+}
