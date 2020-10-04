@@ -167,20 +167,20 @@ nav ul li a:hover{
     margin-bottom: 250px;
 }
 .span{
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 15px;
     margin: 20px;
     font-family: 'Source Code Pro', monospace;
 }
 .span2{
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 15px;
     margin: 20px;
     font-family: 'Source Code Pro', monospace;
     text-transform: uppercase;
 }
 .span3{
-    font-size: 1rem;
+    font-size: 1.5rem;
   
     padding: 15px;
     margin: 20px;
@@ -198,7 +198,7 @@ nav ul li a:hover{
     padding: 10px;
     cursor: pointer;
     border: 2px inset #fff;
-    transition: 0.5s;
+    transition: 1s;
     font-family: 'Abel', sans-serif;
     letter-spacing: 4px;
     
@@ -212,7 +212,7 @@ nav ul li a:hover{
     padding: 10px;
     cursor: pointer;
     border: 2px inset #fff;
-    transition: 0.5s;
+    transition: 1s;
     font-family: 'Abel', sans-serif;
     letter-spacing: 4px;
    
@@ -220,6 +220,7 @@ nav ul li a:hover{
 .btn:hover{
     color: black;
     background: #fff;
+    transition: 1s;
 }
 .btn1:hover{
     color: black;

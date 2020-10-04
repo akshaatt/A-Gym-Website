@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1200px;
+    transform-style: preserve-3d;
+}
+.box{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 40px;
+    background: #000;
+    border: 2px inset grey;
+    box-shadow: 5px 5px 5px #333;
+    border-radius: 20px;
+    cursor:pointer;
+}
+.box::before{
+    content: "GYM";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 6rem;
+    color: #fff;
+    font-style: italic;
+    opacity: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 0.5s;
+
+}
+.box::after{
+    content: "ITEMS";
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 6rem;
+    color: #fff;
+    font-style: italic;
+    opacity: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 0.5s;
+
+}
+.container .box:hover::before,
+.container .box:hover::after{
+    opacity: 0.04;
+}
+.name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    transform: translate3d(0,0,75px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+    transform-style: preserve-3d;
+    text-transform: uppercase;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.box:hover .name{
+    opacity: 1;
+    top: 40px;
+}
+.buy{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,0,75px);
+    color: #000;
+    background: #333;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+    font-family: 'Abel', sans-serif;
+}
+.box:hover .buy{
+    opacity: 1;
+    bottom: 30px;
+}
+.circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 0.5s;
+    background: #fff;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,0px);
+    opacity: 1;
+    z-index: 10;
+}
+.product{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 300px;
+    transition: 0.5s;
+    z-index: 11;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%, -50%, 0px) rotate(-15deg);
+
+}
+.box:hover .product{
+    transform: translate3d(-50%, -50%, 100px) rotate(-15deg);
+}
+#one{
+    height: 250px;
+    width: 200px;
+}
+#three{
+    width: 250px;
+height: 200px;
+}
+#two{
+    height: 200px;
+    width: 1000px;
+}
+.box:nth-child(1) .circle,
+.box:nth-child(1) .buy{
+background: #fff;
+}
+.box:nth-child(2) .circle,
+.box:nth-child(2) .buy{
+background: 	#fff;
+}
+.box:nth-child(3) .circle,
+.box:nth-child(3) .buy{
+background: #fff;
+}

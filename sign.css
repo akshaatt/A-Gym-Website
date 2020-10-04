@@ -1,0 +1,178 @@
+body{
+    background: #000;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+ background: #000;
+    border: 0px solid #000;
+ box-shadow: inset 0 0 2.5 2px rgba(0,0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb{
+background:#fff;
+/* padding: 15px; */
+border-radius: 0%;
+/* margin-top: 20px; */
+
+}
+.sub-main{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contact5{
+    position: relative;
+    min-height: -20vh;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 3px inset #2479a7; */
+    font-family: 'Source Code Pro', monospace;
+}
+.contact5 .contentk{
+    max-width: 800px;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+}
+.contact5 .contentk h2{
+    font-size: 46px;
+    font-weight: 800;
+    color: #fff;
+    font-family: 'Source Code Pro', monospace;
+
+}
+.contact5 .contentk p{
+    
+    font-weight: 800;
+    color:  #666;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: 'Source Code Pro', monospace;
+
+}
+.container5{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-family: 'Source Code Pro', monospace;
+}
+.container5 .contactInfo5{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+.container5 .contactInfo5 .box5{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    font-family: 'Source Code Pro', monospace;
+}
+.container5 .contactInfo5 .box5 .icon5{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 24px;
+}
+@media(max-width:617px){
+    .container5 .contactInfo5 {
+width: 100%;
+    } 
+}
+.container5 .contactInfo5 .box5 .text5{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #666;
+    font-weight: 800;
+    flex-direction: column;
+    font-weight: 300;
+    font-family: 'Source Code Pro', monospace;
+}
+.container5 .contactInfo5 .box5 .text5 h3{
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Source Code Pro', monospace;
+}
+.contactForm5{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+    font-family: 'Source Code Pro', monospace;
+}
+.contactForm5 h2{
+    font-size: 30px;
+    color: #666;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.contactForm5 .inputBox5{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm5 .inputBox5 input,
+.contactForm5 .inputBox5 textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+}
+.contactForm5 .inputBox5  span{
+    position: absolute;
+    left: 0;
+    margin: 10px 0;
+    padding: 5px 0;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+    font-weight: 700;
+}
+.contactForm5 .inputBox5 input:focus ~ span,
+.contactForm5 .inputBox5 input:valid ~ span,
+.contactForm5 .inputBox5 textarea:focus ~ span,
+.contactForm5 .inputBox5 textarea:valid ~ span{
+    color: #333;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.btn5{
+    width: 30%;
+    background: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    /* font-weight: 600; */
+    transition: 0.7s;
+}
+.btn5:hover{
+    background: #333;
+}
+@media(max-width:1073px){
+    .contact5{
+        padding: 50px;
+    }
+    .container5{
+        flex-direction: column;
+    }
+    .contactForm5{
+        width: 80%;
+    }
+}

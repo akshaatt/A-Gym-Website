@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/051a3a9955.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="box" id="shirt">
+        <h2 class="name">
+            skinner
+        </h2>
+        <a href="#" class="buy">BUY NOW</a>
+        <div class="circle"></div>
+        <img src="shirt.png" class="product" id="one">
+    </div>
+    <div class="box">
+        <h2 class="name" id="shoe">
+            shoes
+        </h2>
+        <a href="#" class="buy">BUY NOW</a>
+        <div class="circle"></div>
+        <img src="shoe.png" class="product" id="two">
+    </div>
+    <div class="box">
+        <h2 class="name" id="band">
+            wrist-band 
+        </h2>
+        <a href="#" class="buy">BUY NOW</a>
+        <div class="circle"></div>
+        <img src="band.png" class="product" id="three">
+    </div>
+</div>
+<script src="vanilla-tilt.min.js"></script>
+<script>
+    VanillaTilt.init(document.querySelectorAll(".box"), {
+        max: 45,
+        speed: 400
+    });
+</script>
+</body>
+</html>
