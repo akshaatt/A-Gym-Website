@@ -142,6 +142,12 @@ nav ul li a:hover{
 .farji a:hover{
     color: #fff;
 }
+/* #big{
+    font-size: 3rem;
+    color: white;
+    margin-top: -10px;
+    /* background: #333; */
+
 .supplement{
     font-family: 'Abel', sans-serif;
     color: white;
@@ -152,6 +158,9 @@ nav ul li a:hover{
     padding: 10px;
     margin-top: 55px;
     margin-bottom: 20px;
+}
+#home{
+    color: #fff;
 }
 .detail{
     color: white;
